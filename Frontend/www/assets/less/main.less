@@ -1,3 +1,79 @@
-@mainColor: blue;
+@mainColor: green;
 
 @import "pizza/pizza-card";
+
+@RightPanelWidth: 300px;
+@TopPanelHeight: 80px;
+
+
+.main-pizza{
+  margin-right: @RightPanelWidth;
+  margin-top: @TopPanelHeight;
+
+}
+
+.inner-container{
+
+  max-width: 1000px;
+  margin:auto;
+  padding: 10px;
+}
+.top-panel{
+
+  padding-right: @RightPanelWidth;
+  width: 100%;
+  height: @TopPanelHeight;
+  position: fixed;//щоб рухалась разом (коли пролистуєш вниз)
+  top: 0;
+  left: 0;
+  background: rgba(218,76,24,0.5);
+}
+
+.right-panel{
+
+  height: 100%;
+  width: @RightPanelWidth;
+  position: fixed;
+  top:0;
+  right: 0;
+  background: green;
+
+}
+
+@RightTopHeight:100px;
+@RightBottomHeight:100px;
+
+
+
+.main-part{
+
+  width:100%;
+  height: 100%;
+
+  overflow-y: scroll; //якщо не влазить по осі у, то відбувається прокрутка
+
+  padding-top: @RightTopHeight+20px;
+  padding-bottom: @RightBottomHeight;
+  box-sizing: border-box;
+
+}
+
+.top-part{
+
+  position: absolute;
+  width: 100%;
+height: @RightTopHeight;
+  top: 0;
+  right: 0;
+  background: deeppink;
+}
+
+.bottom-part{
+
+  position: absolute;
+  width: 100%;
+  height: @RightBottomHeight;
+  bottom: 0;
+ right: 0;
+  background: blue;
+}
