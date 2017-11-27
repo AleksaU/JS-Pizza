@@ -3,6 +3,8 @@
  */
 var Templates = require('../Templates');
 
+var Storage = require('./Storage');
+
 //Перелік розмірів піци
 var PizzaSize = {
     Big: "big_size",
@@ -42,6 +44,14 @@ function initialiseCart() {
     //Тут можна наприклад, зчитати вміст корзини який збережено в Local Storage то показати його
     //TODO: ...
 
+    var saved_cart = Storage.read("cart");
+    if(saved_cart)
+        Cart = saved_cart;
+
+
+
+
+
     updateCart();
 }
 
@@ -56,6 +66,7 @@ function updateCart() {
 
     //Очищаємо старі піци в кошику
     $cart.html("");
+    Storage.write("cart",Cart);
 
     //Онволення однієї піци
     function showOnePizzaInCart(cart_item) {
