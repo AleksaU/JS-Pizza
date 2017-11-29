@@ -16,140 +16,63 @@
 </head>
 <body>
 
-<div class="bottom-icon">
-    <div class="flag-bottom">
 
+<div id="nav-panel">
+    <div class="flag">
+        <div class="pizza">PIZZA</div>
+        <div class="kma">KMA</div>
     </div>
-
-    <div class="title l3">
-        Цього тижня <br> на все
+    <img class="flag-end" src="assets/images/discount.svg"/>
+    <div class="row-nav">
+        <a href="tel:0442225222" class="phone">(044) 222 5 222</a>
+        <span class="worktime">24 годиини / 7 днів на тиждень</span>
+        <span class="freedeliver">Безкоштовна доставка піци</span>
+        <button class="btn btn-warning exit">Ввійти</button>
     </div>
-    <div class="title l4">
-        -20%
-    </div>
+    <div class="nav-pizza">Піца</div>
 
 </div>
 
-
-<div class="top-panel">
-    <div class="site-icon">
-        <div class="flag">
-
-        </div>
-        <a class="pizza-logo"  href="index.html">
-            <div class="title l1">
-                Pizza
-            </div>
-            <div class="title l2">
-                KMA
-            </div>
-        </a>
+<div id="cart">
+    <div class="order-header">
+        <h3>Замовлення <span class="pizza-ordered">0</span></h3>
+        <span id="clear">Очистити</span>
     </div>
+    <div id="order">
 
-    <div class="header-top-row">
-        <div class="main-header-top-items">
-            <span class="top-text-grey telephone visible-xs-inline-block visible-sm-inline-block visible-lg-inline-block visible-md-inline-block">
-                (044) 222 5 222
-            </span>
-            <span class="top-text-grey time visible-lg-inline-block visible-md-inline-block">
-                24 години/ 7 днів на тиждень
-            </span>
-            <span class="top-text-grey free-pizza visible-lg-inline-block">
-                Безкоштовна доставка піци
-            </span>
-            <span type="button" class="btn btn-warning sign-in-button">
-                Ввійти
-            </span>
-        </div>
     </div>
-
-    <div class="top-text-grey header-down-row">
-        <span class=" pizza-page" style="color:white;">
-            <a href="index.html" style="color:white;" class="hidden-xs">Піца</a> &nbsp;
-        </span>
+    <div class="order-butt">
+        <div class="summary">
+            <h4>Сума замовлення</h4>
+            <h4 id="total_sum">0 грн</h4>
+        </div>
+        <div class="btn btn-warning">Замовити</div>
     </div>
 </div>
 
-<div class = "main container-fluid">
-    <div class="row">
-        <div class="left_panel">
-            <div class="main-title">
-                <h2>
-                    <span class="title-text"> М'ясні піци</span>
-                    <span class="orange_label">5</span>
-                </h2>
-            </div>
-
-            <div class="all-pizza-type-wrap">
-                <ul class="nav nav-pills all-pizza-type">
-                    <li role="presentation" class="active pizza-filter-button" id="filter-button-all-pizza">
-                        <a href="#">
-                            Усі
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button"  id="filter-button-meat">
-                        <a href="#" >
-                            Мясні
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="filter-button-pineapples">
-                        <a href="#">
-                            З ананасами
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="filter-button-mushrooms">
-                        <a href="#">
-                            З грибами
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="filter-button-ocean">
-                        <a href="#">
-                            З морепродуктами
-                        </a>
-                    </li>
-                    <li role="presentation" class="pizza-filter-button" id="filter-button-tomato">
-                        <a href="#">
-                            Вега
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="row" id="pizza_list">
-
-            </div>
-
-
-            <div class ="right_panel">
-
-                <div class="top-part">
-                 <span class="text_order"> Замовлення
-                 <span class="orange_label">0</span>
-                 </span>
-                    <span class="clean"> Очистити замовлення </span>
-                </div>
-
-                <div class="main-part">
-                    <div class="cart">
-
-
-                    </div>
-                </div>
-
-                <div class="bottom-part">
-                    <span class="text_sum"> Сума замовлення </span>
-                    <span class="count"> 000 грн </span>
-                    <div class="do_order_button">
-                        <button type="button" class="btn btn warning button">
-                            Замовити
-                        </button>
-                    </div>
-
-                </div>
-            </div>
+<div class="container">
+    <div class="menu">
+        <h3 class="all-pizza-lbl">Усі піци <span class="number">0</span></h3>
+        <div class="nav-pizza">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="pizza-type active"><a href="#">Усі</a></li>
+                <li role="presentation" class="pizza-type"><a href="#">Мясні</a></li>
+                <li role="presentation" class="pizza-type"><a href="#">З ананасами</a></li>
+                <li role="presentation" class="pizza-type"><a href="#">З морепродуктами</a></li>
+                <li role="presentation" class="pizza-type"><a href="#">З грибами</a></li>
+                <li role="presentation" class="pizza-type"><a href="#">Вега</a></li>
+            </ul>
         </div>
     </div>
-</div>
+    <div class="row display-flex" id="pizza_list">
+        <div class="badge-ds">
+            <img src="assets/images/discount.svg"/>
+            <div class="text">ЦЬОГО ТИЖНЯ НА ВСЕ</div>
+            <div class="discount">-20%</div>
+        </div>
+
+
+
 
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
