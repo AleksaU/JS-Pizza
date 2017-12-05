@@ -1,0 +1,135 @@
+#cart, #cartOrder {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: @CartWidth;
+  box-shadow: -4px 0 10px rgba(147, 141, 89, 0.43);
+  z-index: 2;
+
+  background-color: #ffed9b;
+
+  .order-header {
+    height: @NavHeight;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 16px;
+    background-color: white;
+    h3 {
+      margin: 0;
+      display: inline-block;
+    }
+    #clear {
+      color: #d8d8d8;
+      font-size: 12px;
+      float: right;
+      padding-right: 20px;
+      padding-top: 8px;
+      cursor: pointer;
+    }
+  }
+
+  @CartButtHeight: 100px;
+
+  #order {
+    position: absolute;
+    width: @CartWidth;
+    background-color: #f0f0f0;
+    top: @NavHeight;
+    right: 0;
+    z-index: 3;
+    bottom: @CartButtHeight;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .row-order {
+      @RowHeight: 115px;
+      position: relative;
+      height: @RowHeight;
+      padding: 20px;
+      border-bottom: solid 1px #d8d8d8;
+      h3 {
+        margin: 0;
+        color: orange;
+        font-weight: 300;
+      }
+      span {
+        margin-right: 5px;
+      }
+      .btn {
+        text-align: center;
+        font-size: 16px;
+        height: 26px;
+        width: 26px;
+        padding: 0;
+        font-weight: bold;
+        border-radius: 50px;
+      }
+
+      .delete {
+        color: #EA862E;
+      }
+      .price {
+        font-weight: bold;
+      }
+      .pizza-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: -@RowHeight*0.9 / 2;
+        width: @RowHeight*0.9;
+        height: @RowHeight*0.9;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .order-butt {
+    position: fixed;
+    bottom: 0;
+    height: @CartButtHeight;
+    width: @CartWidth;
+    background-color: white;
+
+    h4 {
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .summary {
+      padding: 5px 10px 5px 10px;
+
+      #sum {
+        font-size: 20px;
+        float: right;
+        padding-right: 10px;
+      }
+    }
+    .btn {
+      display: block;
+      margin: 0 20px 0 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    min-width: @CartWidth;
+  }
+
+  #cart, #cartOrder {
+    right: auto;
+    left: @CartWidth;
+  }
+}
+
+#cartOrder{
+  .btn, .delete{
+    display: none;
+  }
+}
+#cart {
+  .quantitylbl{
+    display: none;
+  }
+}

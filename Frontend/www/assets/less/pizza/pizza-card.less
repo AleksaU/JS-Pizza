@@ -1,30 +1,56 @@
 .pizza-card {
-
-  position: relative;
-
-
-
-  .new-badge{
-
-
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    font-size: 25px;
-
-
-  }
-
-  img {
-    max-width: 100%;
-    width: 250px;
+  .pizza-icon {
+    max-width: 250px;
+    width:100%;
   }
 
   h3 {
     color: @mainColor;
     background-color: lighten(@mainColor, 45%);
   }
-}
-.btn-primary{
-  background: orange;
+
+  .label {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .txt {
+    .type {
+      color: #c3c3c3;
+      font-size: 12px;
+      margin-bottom: 0px;
+    }
+
+    .description {
+      margin: 0;
+    }
+  }
+  .caption {
+
+    @IconSize: 18px;
+    .options {
+      width: 100%;
+      display: inline-flex;
+      .option {
+        padding: 0px;
+        text-align: center;
+        img {
+          width: @IconSize;
+          height: @IconSize;
+        }
+        .diemeter, .gramms {
+          margin-left: 4px;
+        }
+        .price {
+          margin-bottom: 0;
+          color: black;
+        }
+      }
+    }
+
+  }
 }

@@ -1,0 +1,71 @@
+.menu {
+  padding: 20px;
+  text-align: center;
+  .nav-pizza {
+    display: inline-block;
+    align-content: center;
+  }
+
+  .nav {
+    color: orange;
+    li.active{
+      a, a:hover {
+        background-color: #EA862E;
+      }
+    }
+    li a:hover {
+      color: white;
+      background-color: orange;
+    }
+  }
+}
+
+a {
+  color: orange;
+}
+.number, .pizza-ordered {
+  vertical-align: middle;
+  font-size: 16px;
+  padding: 4px 8px 4px 8px;
+  display: inline-block;
+  color: white;
+  background-color: orange;
+  border-radius: 50px;
+}
+
+.row {
+  margin: auto;
+  max-width: 900px;
+  margin-bottom: 10px;
+}
+
+
+.badge-ds {
+  @BadgeHeight: 100px;
+  position: fixed;
+  bottom: 0;
+  height: @BadgeHeight;
+  width: @FlagWidth + 10px;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  left: @FlagLeft;
+  background-color: #EA862E;
+  .text {
+    border-bottom: dashed 1px #af6422;
+    padding: 5px;
+    margin: 0px 5px 0 5px;
+  }
+  .discount {
+    padding: 5px;
+    font-weight: bold;
+  }
+  img {
+    position: fixed;
+    height: 20px;
+    left: @FlagLeft;
+    z-index: 2;
+    bottom: @BadgeHeight - 5px;
+    width: @FlagWidth + 10px;
+  }
+}
