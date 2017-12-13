@@ -12,9 +12,28 @@
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
+    <!-- Google Maps -->
+    <script	type="text/javascript"
+               src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB2yUg1gvX2eiakImTt5iZIKlmv3LiM2m4">
+    </script>
 
+    <!-- LiqPay Widget -->
+    <script	src="//static.liqpay.com/libjs/checkout.js"></script>
 </head>
 <body>
 
-<h1>Top Panel on All Pages</h1>
+<div id="nav-panel">
+    <div class="flag" onclick="location.href='/'">
+        <div class="pizza">PIZZA</div>
+        <div class="kma">KMA</div>
+    </div>
+    <img class="flag-end" src="assets/images/discount.svg"/>
+    <div class="row-nav">
+        <a href="tel:0442225222" class="phone">(044) 222 5 222</a>
+        <span class="worktime">24 годиини / 7 днів на тиждень</span>
+        <span class="freedeliver">Безкоштовна доставка піци</span>
+        <button class="btn btn-warning exit">Ввійти</button>
+    </div>
+    <div class="nav-pizza">Піца</div>
 
+</div>
