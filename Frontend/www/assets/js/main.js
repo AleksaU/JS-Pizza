@@ -41,9 +41,7 @@ var API_URL = "http://localhost:5050";
         backendPost("/api/create-order/", order_info, callback);
     };
 },{}],2:[function(require,module,exports){
-    /**
-     * Created by sannguyen on 02.11.17.
-     */
+
     var basil = require('basil.js');
 
     basil = new basil();
@@ -56,9 +54,7 @@ var API_URL = "http://localhost:5050";
         return basil.set(key, value);
     };
 },{"basil.js":11}],3:[function(require,module,exports){
-    /**
-     * Created by sannguyen on 18.11.17.
-     */
+
 
     var Pizza_Order = require('./pizza/PizzaOrder');
 
@@ -493,9 +489,7 @@ var API_URL = "http://localhost:5050";
     exports.PizzaCart_OneItem = ejs.compile("<div class=\"row-order\">\n    <h3 class=\"name\"><%= pizza.title %>\n        <% if (size == \"big_size\") {%>\n        (Велика)\n        <%} else {%>\n        (Мала)\n        <% } %>\n    </h3>\n    <div class=\"chars\">\n        <span class=\"size\"><img src=\"assets/images/size-icon.svg\"><span class=\"diemeter\"> 30</span></span>\n        <span class=\"weight\"><img src=\"assets/images/weight.svg\"><span class=\"gramms\"> 460</span></span>\n    </div>\n    <div class=\"price-quant\">\n        <span class=\"price\"><%= pizza[size].price * quantity %> грн</span>\n        <span class=\"btn btn-success plus\">+</span>\n        <span class=\"quant\"><%= quantity %></span>\n        <span class=\"btn btn-danger minus\">&ndash;</span>\n        <span class=\"quantitylbl\">шт.</span>\n        <span class=\"btn btn-default delete\">&times;</span>\n        <img class=\"pizza-img\" src=\"<%= pizza.icon %>\">\n    </div>\n</div>");
 
 },{"ejs":13}],6:[function(require,module,exports){
-    /**
-     * Created by sannguyen on 23.11.17.
-     */
+
 
     var Cart = require("./pizza/PizzaCart");
 
@@ -846,9 +840,7 @@ var API_URL = "http://localhost:5050";
     exports.filterPizza = filterPizza;
     exports.initialiseMenu = initialiseMenu;
 },{"../API":1,"../Pizza_List":4,"../Templates":5,"./PizzaCart":8}],10:[function(require,module,exports){
-    /**
-     * Created by sannguyen on 16.11.17.
-     */
+
 
     var api = require('../API');
     var Storage = require('../LocalStorage');
@@ -1053,7 +1045,7 @@ var API_URL = "http://localhost:5050";
                 return Object.prototype.toString.call(obj).replace(/^\[object\s(.*)\]$/, function ($0, $1) { return $1.toLowerCase(); });
             }
         };
-        // Add some isType methods: isArguments, isBoolean, isFunction, isString, isArray, isNumber, isDate, isRegExp, isUndefined, isNull.
+
         var types = ['Arguments', 'Boolean', 'Function', 'String', 'Array', 'Number', 'Date', 'RegExp', 'Undefined', 'Null'];
         for (var i = 0; i < types.length; i++) {
             Basil.utils['is' + types[i]] = (function (type) {
@@ -2438,7 +2430,7 @@ var API_URL = "http://localhost:5050";
                     "spec": ">=2.4.1 <3.0.0",
                     "type": "range"
                 },
-                "/Users/sannguyen/WebstormProjects/JS-Pizza"
+                "/Users/Sasha/JS-Pizza"
             ]
         ],
         "_from": "ejs@>=2.4.1 <3.0.0",
@@ -2472,7 +2464,7 @@ var API_URL = "http://localhost:5050";
         "_shasum": "cc872c168880ae3c7189762fd5ffc00896c9518a",
         "_shrinkwrap": null,
         "_spec": "ejs@^2.4.1",
-        "_where": "/Users/sannguyen/WebstormProjects/JS-Pizza",
+        "_where": "/Users/Sasha/JS-Pizza",
         "author": {
             "name": "Matthew Eernisse",
             "email": "mde@fleegix.org",

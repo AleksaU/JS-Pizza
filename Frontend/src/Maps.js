@@ -1,6 +1,3 @@
-/**
- * Created by sannguyen on 18.11.17.
- */
 
 var Pizza_Order = require('./pizza/PizzaOrder');
 

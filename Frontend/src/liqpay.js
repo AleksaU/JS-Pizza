@@ -1,6 +1,4 @@
-/**
- * Created by sannguyen on 23.11.17.
- */
+
 
 var Cart = require("./pizza/PizzaCart");
 
