@@ -12,37 +12,36 @@
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
-
 </head>
 <body>
 
 
-<div id="nav-panel">
+<div id="top-panel">
     <div class="flag">
         <div class="pizza">PIZZA</div>
         <div class="kma">KMA</div>
     </div>
     <img class="flag-end" src="assets/images/discount.svg"/>
-    <div class="row-nav">
+    <div class="first_line_of_top_panel">
         <a href="tel:0442225222" class="phone">(044) 222 5 222</a>
         <span class="worktime">24 годиини / 7 днів на тиждень</span>
         <span class="freedeliver">Безкоштовна доставка піци</span>
-        <button class="btn btn-warning exit">Ввійти</button>
+        <button class="btn btn-warning enter">Ввійти</button>
     </div>
-    <div class="nav-pizza">Піца</div>
+    <div class="top-panel">Піца</div>
 
 </div>
 
 <div id="cart">
-    <div class="order-header">
-        <h3>Замовлення <span class="pizza-ordered">0</span></h3>
+    <div class="order-top">
+        <h3>Замовлення <span class="number_of_orders">0</span></h3>
         <span id="clear">Очистити</span>
     </div>
-    <div id="order">
+    <div id="order_itself">
 
     </div>
-    <div class="order-butt">
-        <div class="summary">
+    <div class="sum_of_order">
+        <div class="summa">
             <h4>Сума замовлення</h4>
             <h4 id="total_sum">0 грн</h4>
         </div>
@@ -50,10 +49,11 @@
     </div>
 </div>
 
+
 <div class="container">
     <div class="menu">
         <h3 class="all-pizza-lbl">Усі піци <span class="number">0</span></h3>
-        <div class="nav-pizza">
+        <div class="pizza_types_panel">
             <ul class="nav nav-pills">
                 <li role="presentation" class="pizza-type active"><a href="#">Усі</a></li>
                 <li role="presentation" class="pizza-type"><a href="#">Мясні</a></li>
