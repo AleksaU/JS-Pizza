@@ -18,17 +18,17 @@ var Cart = [];
 var $cart = $("#order");
 
 var total_sum = 0;
-var orders_num = 0;
+var orders_number = 0;
 
 
 function updateTotalSum(){
-    $(".pizza-ordered").html(orders_num);
+    $(".number_of_orders").html(orders_number);
     Storage.set("total_sum",total_sum);
 }
 
 function updateOrderNumber(){
-    $(".pizza-ordered").html(orders_num);
-    Storage.set("orders_num",orders_num);
+    $(".number_of_orders").html(orders_number);
+    Storage.set("orders_number",orders_number);
 }
 
 
@@ -54,7 +54,7 @@ function addToCart(pizza, size) {
         size: size,
         quantity: 1
     });
-        orders_num++;
+        orders_number++;
         updateOrderNumber();
     }
     // Оновлюємо суму
@@ -118,7 +118,7 @@ function updateCart() {
             //Зменшуємо кількість замовлених піц
             if (cart_item.quantity == 1) {
                 removeFromCart(cart_item);
-                orders_num--;
+                orders_number--;
                 updateOrderNumber();
             }
             cart_item.quantity -= 1;
@@ -159,7 +159,7 @@ function clear(){
     updateCart();
     total_sum = 0;
     updateTotalSum();
-    orders_num = 0;
+    orders_number = 0;
     updateOrderNumber();
 }
 

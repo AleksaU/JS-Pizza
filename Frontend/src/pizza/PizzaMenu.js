@@ -13,7 +13,7 @@ function showPizzaList(list) {
     //Очищаємо старі піци в кошику
     $pizza_list.html("");
 
-    //Онволення однієї піци
+    //Онoвлення однієї піци
     function showOnePizza(pizza) {
         var html_code = Templates.PizzaMenu_OneItem({pizza: pizza});
 
@@ -53,7 +53,7 @@ function isPineapple(obj) {
         return true;
     else return false;
 }
-function isMush(obj) {
+function isMushroom(obj) {
     if (obj.content.mushroom)
         return true;
     else return false;
@@ -76,7 +76,7 @@ $(".pizza-type").click(function () {
             filterPizza(isOcean);
             break;
         case "З грибами":
-            filterPizza(isMush);
+            filterPizza(isMushroom);
             break;
         case "Вега":
             filterPizza(isVega);
