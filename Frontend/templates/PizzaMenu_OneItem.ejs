@@ -10,12 +10,8 @@ function getIngredientsArray(pizza) {
     });
     return result;
 }
-<<<<<<< HEAD
 %>
-=======
 
-   %>
->>>>>>> c81d14a4df30b8774f6bf82ce1a0a3d3a4f132a4
 <div class="col-sm-6 col-md-4 cl pizza-card">
     <div class="thumbnail">
 
@@ -33,7 +29,6 @@ function getIngredientsArray(pizza) {
             <p class="type"><%= pizza.type %></p>
             <p class="description"><%= getIngredientsArray(pizza).join(", ") %></p>
 
-<<<<<<< HEAD
         </div>
         <div class="caption">
 
@@ -72,43 +67,3 @@ function getIngredientsArray(pizza) {
                 </div>
             </div>
         </div>
-=======
-        </div>
-        <div class="caption">
-
-            <div class="options">
-                <% if(pizza.small_size) { %>
-                <% if(pizza.big_size) { %>
-                <div class="option col-sm-6 col-xs-12">
-                <% } else {%>
-                <div class="option col-xs-12">
-                <% } %>
-                    <div class="size"><img src="assets/images/size-icon.svg"><span class="diemeter"><%= pizza.small_size.size %></span>
-                    </div>
-                    <div class="weight"><img src="assets/images/weight.svg"><span class="gramms"><%= pizza.small_size.weight%></span>
-                    </div>
-                    <h3 class="price"><%= pizza.small_size.price %></h3>
-                    <div>грн.</div>
-                    <a class="btn btn-warning buy-small">Купити</a>
-                </div>
-                <% } %>
-                <% if(pizza.big_size) { %>
-                <% if(pizza.small_size) { %>
-                <div class="option option col-sm-6 col-xs-12 ">
-                <% } else {%>
-                <div class="option col-xs-12">
-                <% } %>
-                    <div class="size"><img src="assets/images/size-icon.svg"><span class="diemeter"><%= pizza.big_size.size%></span>
-                    </div>
-                    <div class="weight"><img src="assets/images/weight.svg"><span class="gramms"><%=pizza.big_size.weight%></span>
-                    </div>
-                    <h3 class="price"><%=pizza.big_size.price%></h3>
-                    <div>грн.</div>
-                    <a class="btn btn-warning buy-big">Купити</a>
-                </div>
-                <% } %>
-            </div>
-        </div>
-    </div>
-</div>
->>>>>>> c81d14a4df30b8774f6bf82ce1a0a3d3a4f132a4

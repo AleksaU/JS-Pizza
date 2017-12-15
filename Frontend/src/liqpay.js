@@ -7,7 +7,7 @@ function initialize(data, signature) {
         data: data,
         signature: signature,
         embedTo: "#liqpay",
-        mode: "popup" // embed || popup
+        mode: "popup"
     }).on("liqpay.callback", function(data){
         console.log(data.status);
         if(data.result == "success")

@@ -15,7 +15,7 @@ var PizzaSize = {
 var Cart = [];
 
 //HTML едемент куди будуть додаватися піци
-var $cart = $("#order");
+var $cart = $("#order_itself");
 
 var total_sum = 0;
 var orders_number = 0;

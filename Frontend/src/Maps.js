@@ -29,12 +29,12 @@ var styledMapType = new google.maps.StyledMapType(
         {
             featureType: 'poi',
             elementType: 'geometry',
-            stylers: [{color: '#dfd2ae'}]
+            stylers: [{color: '#c9c4b5'}]
         },
         {
             featureType: 'poi',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#93817c'}]
+            stylers: [{color: '#a39f96'}]
         },
         {
             featureType: 'poi.park',
