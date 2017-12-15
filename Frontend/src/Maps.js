@@ -3,9 +3,9 @@ var Pizza_Order = require('./pizza/PizzaOrder');
 
 var styledMapType = new google.maps.StyledMapType(
     [
-        {elementType: 'geometry', stylers: [{color: '#234f3e'}]},
-        {elementType: 'labels.text.fill', stylers: [{color: brown}]},
-        {elementType: 'labels.text.stroke', stylers: [{color: '#754855'}]},
+        {elementType: 'geometry', stylers: [{color: '#c9d3d1'}]},
+        {elementType: 'labels.text.fill', stylers: [{color: '#eaf2f0'}]},
+        {elementType: 'labels.text.stroke', stylers: [{color: '#0c0c0c'}]},
         {
             featureType: 'administrative',
             elementType: 'geometry.stroke',

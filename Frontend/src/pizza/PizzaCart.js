@@ -3,7 +3,7 @@
  */
 var Templates = require('../Templates');
 
-var Storage = require('./LocalStorage');
+var Storage = require('../LocalStorage');
 
 //Перелік розмірів піци
 var PizzaSize = {
@@ -22,7 +22,7 @@ var orders_number = 0;
 
 
 function updateTotalSum(){
-    $(".number_of_orders").html(orders_number);
+    $("#total_sum").html(total_sum);
     Storage.set("total_sum",total_sum);
 }
 
@@ -80,7 +80,7 @@ function initialiseCart() {
         Cart = saved_orders;
         total_sum = Storage.get("total_sum");
         updateTotalSum();
-        orders_num = Storage.get("orders_num");
+        orders_number = Storage.get("orders_number");
         updateOrderNumber();
     }
     updateCart();
@@ -130,8 +130,9 @@ function updateCart() {
         $node.find(".delete").click(function () {
             removeFromCart(cart_item);
             total_sum -= cart_item.pizza[cart_item.size].price * cart_item.quantity;
-            orders_num--;
+            orders_number--;
             updateOrderNumber();
+            updateTotalSum();
             //Оновлюємо відображення
             updateCart();
             updateTotal();
