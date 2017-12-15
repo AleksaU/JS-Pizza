@@ -3,7 +3,7 @@
 <div class="container">
     <div class="menu">
         <h3 class="all-pizza-lbl">Усі піци <span class="number">0</span></h3>
-        <div class="nav-pizza">
+        <div class="pizza_types_panel">
             <ul class="nav nav-pills">
                 <li role="presentation" class="pizza-type active"><a href="#">Усі</a></li>
                 <li role="presentation" class="pizza-type"><a href="#">М'ясні</a></li>
@@ -20,20 +20,23 @@
 </div>
 
 <div id="cart">
-    <div class="order-header">
-        <h3>Замовлення <span class="pizza-ordered">0</span></h3>
+    <div class="header">
+        <h3>Замовлення <span class="number_of_orders">0</span></h3>
         <span id="clear">Очистити</span>
     </div>
-    <div id="order">
-
+    <div id="order_itself">
     </div>
-    <div class="order-butt">
-        <div class="summary">
+
+
+    <div class="sum_of_order">
+        <div class="summa">
             <h4>Сума замовлення</h4>
-            <h4 id="sum">0 грн</h4>
+            <h4 id="total_sum">0 грн</h4>
         </div>
         <div id="orderButt" class="btn btn-warning">Замовити</div>
     </div>
 </div>
+
+
 
 <% include common/footer.ejs %>
