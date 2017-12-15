@@ -111,9 +111,17 @@ overflow-y: scroll;
     }
   }
 }
-
-.image{
-
+.oneItem {
+  position:relative;
+  .image {
+    position: absolute;
+    display: inline;
+    right: -50px;
+    top:0;
+    img {
+      height:82px;
+    }
+  }
 }
 @media (max-width: 600px) {
   body {

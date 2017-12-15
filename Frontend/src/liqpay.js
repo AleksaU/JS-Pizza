@@ -1,5 +1,5 @@
 
-
+// ініціалізуємо оплату
 var Cart = require("./pizza/PizzaCart");
 
 function initialize(data, signature) {

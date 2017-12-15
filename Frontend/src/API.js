@@ -1,6 +1,6 @@
 var API_URL = "http://localhost:5050";
 
-function backendGet(url, callback) {
+function backendGet(url, callback) { // отримуємо запити з серверу
     $.ajax({
         url: API_URL + url,
         type: 'GET',
@@ -13,7 +13,7 @@ function backendGet(url, callback) {
     });
 }
 
-function backendPost(url, data, callback) {
+function backendPost(url, data, callback) {   // відправляємо запити на сервер
     $.ajax({
         url: API_URL + url,
         type: 'POST',
